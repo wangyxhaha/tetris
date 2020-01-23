@@ -1,7 +1,7 @@
 /*
-* made by ÍõÓîĞù 
-* ĞèÒªegeÍ¼ĞÎ¿â 
-* ĞèÒª±àÒëÖ¸Áî
+* made by ç‹å®‡è½© 
+* éœ€è¦egeå›¾å½¢åº“ 
+* éœ€è¦ç¼–è¯‘æŒ‡ä»¤
 * "-lgraphics64 -lgdi32 -limm32 -lmsimg32 -lole32 -loleaut32 -lwinmm -luuid -mwindows"
 */
 #include <iostream>
@@ -13,9 +13,10 @@ using namespace std;
 
 int main(){
 	my_init();
-	initgraph(chx,chy); //´ò¿ª´°¿Ú 
+	initgraph(chx,chy); //æ‰“å¼€çª—å£ 
 	setcaption(menu);
 	getch();
-	closegraph(); //¹Ø±Õ´°¿Ú 
+	closegraph(); //å…³é—­çª—å£ 
+	return 0;
 }
 
