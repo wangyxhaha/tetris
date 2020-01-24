@@ -6,11 +6,12 @@
 /*macro*/
 #define start "tetris-start"
 #define menu "tetris-menu"
+#define font "ZV Weirdo" //ture flie:ZV_Weirdo.TTF
 /**/
 
 int color[7]={EGERGB(0xff, 0x0, 0x0),  //I red
-			  EGERGB(0xff, 0x0,0xff),  //J magenta
-			  EGERGB(0xff,0xff, 0x0),  //L yellow
+/*7 blocks*/  EGERGB(0xff, 0x0,0xff),  //J magenta
+/*color*/	  EGERGB(0xff,0xff, 0x0),  //L yellow
 			  EGERGB( 0x0,0xff,0xff),  //O cyan
 			  EGERGB( 0x0, 0x0,0xff),  //S blue
 			  EGERGB(0xa9,0xa9,0xa9),  //T lightgrey
@@ -23,6 +24,7 @@ void my_init(){
 }
 
 void start_ani();
+bool if_font();
 /**/
 
 #include "start.cpp"
