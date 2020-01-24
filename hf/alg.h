@@ -3,11 +3,12 @@
 * using EGE
 */
 
-/*macro*/
+using namespace std;
+
 #define start "tetris-start"
 #define menu "tetris-menu"
-#define font "ZV Weirdo" //ture flie:ZV_Weirdo.TTF
-/**/
+#define tfont "ZV Weirdo" //ture flie:ZV_Weirdo.TTF
+#define gfont "Consolas"
 
 int color[7]={EGERGB(0xff, 0x0, 0x0),  //I red
 /*7 blocks*/  EGERGB(0xff, 0x0,0xff),  //J magenta
@@ -17,15 +18,24 @@ int color[7]={EGERGB(0xff, 0x0, 0x0),  //I red
 			  EGERGB(0xa9,0xa9,0xa9),  //T lightgrey
 			  EGERGB( 0x0,0xff, 0x0)}; //Z green
 
-/*function*/
 void my_init(){
 	setinitmode(0); //Remove EGE's opening animation
 	return;
 }
 
+bool mouse_down(){
+	mouse_msg mmsg;
+	while (mousemsg()){
+		mmsg=getmouse();
+	}
+	if (mmsg.is_down()) return 1;
+	else return 0;
+}
+
 void start_ani();
 bool if_font();
-/**/
+bool menu_gui();
 
 #include "start.cpp"
+#include "menu.cpp"
 

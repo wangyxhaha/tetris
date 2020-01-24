@@ -4,7 +4,6 @@
 * Compilation instructions required:
 * "-lgraphics64 -lgdi32 -limm32 -lmsimg32 -lole32 -loleaut32 -lwinmm -luuid -mwindows"
 */
-using namespace std;
 #include <iostream>
 #include <fstream>
 #include <stdlib.h>
@@ -13,6 +12,7 @@ using namespace std;
 #include "./hf/alg.h"
 #define chx 640
 #define chy 640
+using namespace std;
 
 int main(){
 	if(!if_font()){
@@ -23,6 +23,15 @@ int main(){
 	/*start*/
 	setcaption(start);
 	start_ani();
+	/**/
+	/*menu*/
+	setcaption(menu);
+	if (menu_gui()){
+		cout << "start" << endl;
+	}
+	else{
+		cout << "exit" << endl;
+	}
 	getch();
 	closegraph(); //close window
 	return 0;

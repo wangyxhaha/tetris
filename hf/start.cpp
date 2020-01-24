@@ -3,10 +3,13 @@
 * using EGE
 */
 
+using namespace std;
+
 void start_ani(){ //start animation
+	showmouse(0);
 	setbkcolor(BLACK); //set background -> black
 	setcolor(WHITE); //set font color -> white
-	setfont(100,70,font); //set font -> high=100,wide=70,font=ZV_Weirdo
+	setfont(100,70,tfont); //set font -> high=100,wide=70,font=ZV_Weirdo
 	xyprintf(110,270,"tetris"); //print text
 	Sleep(1000); //1s
 	for (int i=0;i<7;i++){ //seven color
@@ -17,10 +20,11 @@ void start_ani(){ //start animation
 	}
 	setcolor(WHITE);
 	cleardevice();
-	setfont(50,35,font);
+	setfont(50,35,tfont);
 	xyprintf(145,270,"made by");
 	xyprintf(145,320,"wangyxhaha");
 	Sleep(1000);
+	showmouse(1);
 	return;
 }
 
