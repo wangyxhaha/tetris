@@ -6,6 +6,7 @@
 bool menu_gui(){
 	showmouse(1);
 	cleardevice(); //clean screen
+	setfontbkcolor(BLACK); //set font backgrund color -> black
 	setcolor(WHITE); //set font color -> white
 	setfont(100,70,tfont); //set font -> high=100,wide=70,font=ZV_Weirdo
 	xyprintf(110,110,"tetris"); //print text

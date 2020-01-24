@@ -25,14 +25,15 @@ int main(){
 	start_ani();
 	/**/
 	/*menu*/
-	setcaption(menu);
-	if (menu_gui()){
-		cout << "start" << endl;
+	while (1){
+		setcaption(menu);
+		if (menu_gui()){ //start
+			;
+		}
+		else{ //exit
+			break;
+		}
 	}
-	else{
-		cout << "exit" << endl;
-	}
-	getch();
 	closegraph(); //close window
 	return 0;
 }
