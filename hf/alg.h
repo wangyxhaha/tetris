@@ -23,6 +23,7 @@ int color[7]={EGERGB(0xff, 0x0, 0x0),  //I red
 
 #include "start.cpp"
 #include "menu.cpp"
+#include "game.cpp"
 
 void my_init(){
 	setinitmode(!INIT_WITHLOGO); //Remove EGE's opening animation
@@ -39,6 +40,7 @@ bool mouse_down(){
 }
 
 /*from other flie*/
-extern void start_ani();
-extern bool if_font();
-extern bool menu_gui();
+extern void start_ani(); //start animation
+extern bool if_font(); //chack font
+extern bool menu_gui(); //menu
+extern void game(); //game

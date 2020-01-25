@@ -28,7 +28,7 @@ int main(){
 	while (1){
 		setcaption(menu);
 		if (menu_gui()){ //start
-			;
+			game();
 		}
 		else{ //exit
 			break;
