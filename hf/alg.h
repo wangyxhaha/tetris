@@ -25,7 +25,7 @@ int color[7]={EGERGB(0xff, 0x0, 0x0),  //I red
 #include "menu.cpp"
 
 void my_init(){
-	setinitmode(0); //Remove EGE's opening animation
+	setinitmode(!INIT_WITHLOGO); //Remove EGE's opening animation
 	return;
 }
 
