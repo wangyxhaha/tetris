@@ -1,0 +1,30 @@
+BLOCKS:
+
+I red
+*#**
+
+J magenta
+*
+#**
+
+L yellow
+  *
+**#
+
+O cyan
+#*
+**
+
+S blue
+*
+*#
+ *
+
+T lightgrey
+ *
+*#*
+
+Z green
+ *
+#*
+*
