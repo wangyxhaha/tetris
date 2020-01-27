@@ -7,16 +7,15 @@ int gamem[10][20]; //0 nothing;1 I;2 J;3 L;4 O;5 S;6 T;7 Z
 
 struct blocks{
 	int x,y;
-};
-
-class Block{
-	int x,y,blocks_num;
-	blocks bl[4]
-	public:
-		bool if_touch_wall();
-		bool if_touch_block();
-		bool if_land();
-};
+}
+I[4]={{-1,0},{0,0},{1,0},{2,0}},
+J[4]={{-1,-1},{-1,0},{0,0},{1,0}},
+L[4]={{-1,0},{0,0},{1,0},{1,-1}},
+O[4]={{0,0},{1,0},{0,1},{1,1}},
+S[4]={{0,-1},{0,0},{1,0},{1,1}},
+T[4]={{0,-1},{-1,0},{0,0},{1,0}},
+Z[4]={{1,-1},{0,0},{1,0},{0,1}},
+;
 
 #include "draw.cpp"
 

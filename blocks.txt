@@ -2,29 +2,44 @@ BLOCKS:
 
 I red
 *#**
+1234
 
 J magenta
 *
-#**
+*#*
+1
+234
 
 L yellow
   *
-**#
+*#*
+  4
+123
 
 O cyan
 #*
 **
+12
+34
 
 S blue
 *
-*#
+#*
  *
+1
+23
+ 4
 
 T lightgrey
  *
 *#*
+ 1
+234
 
 Z green
  *
 #*
 *
+ 1
+23
+4
