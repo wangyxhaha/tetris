@@ -49,7 +49,7 @@ void game_start_ani(){
 void game(){
 	game_start_ani();
 	randomize();
-	int now_kind=random(7)+1,now_di,next_kind=random(7)+1;
+	int now_kind=random(7)+1,now_x=5,now_y=4,now_di,next_kind=random(7)+1;
 	memset(gamem,0,sizeof(gamem));
 	showmouse(0);
 	cleardevice();
