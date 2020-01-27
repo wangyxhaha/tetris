@@ -14,10 +14,21 @@ L[4]={{-1,0},{0,0},{1,0},{1,-1}},
 O[4]={{0,0},{1,0},{0,1},{1,1}},
 S[4]={{0,-1},{0,0},{1,0},{1,1}},
 T[4]={{0,-1},{-1,0},{0,0},{1,0}},
-Z[4]={{1,-1},{0,0},{1,0},{0,1}},
-;
+Z[4]={{1,-1},{0,0},{1,0},{0,1}};
 
 #include "draw.cpp"
+
+bool if_touch_wall(int x,int y){
+	;
+}
+
+bool if_touch_blocks(int x,int y){
+	;
+}
+
+bool if_not_touch(int x,int y){
+	return !(if_touch_wall(x,y) || if_touch_blocks(x,y));
+}
 
 void game_start_ani(){
 	setfont(100,100,tfont);
@@ -45,8 +56,8 @@ void game(){
 	for (int time=0;is_run();delay_fps(5),time++){
 		cleardevice();
 		draw_bk();
-//		draw_game_block();
-//		draw_next_block();
+		// draw_game_block();
+		// draw_next_block();
 		if (keystate(VK_LEFT)){
 			;
 		}
